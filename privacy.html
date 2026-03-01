@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codex Mobile IDE Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Codex Mobile IDE.">
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --text: #111827;
+      --muted: #5b6472;
+      --line: #dbe2ea;
+      --accent: #1778f2;
+      --shadow: 0 12px 40px rgba(17, 24, 39, 0.08);
+      --radius: 24px;
+      --max: 920px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .page {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+      padding: 24px 0 64px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .brand img {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .link-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 42px;
+      padding: 0 16px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 32px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.02;
+      letter-spacing: -0.05em;
+    }
+
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 0 0 14px;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .meta {
+      margin-bottom: 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(calc(100% - 20px), var(--max));
+      }
+
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .card {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="topbar">
+      <a class="brand" href="./index.html">
+        <img src="images/logo.png" alt="Codex Mobile IDE logo">
+        <span>Codex Mobile IDE</span>
+      </a>
+      <a class="link-pill" href="./index.html">Back to Support</a>
+    </div>
+
+    <main class="card">
+      <h1>Privacy Policy</h1>
+      <div class="meta">Last updated: March 1, 2026</div>
+
+      <p>
+        This Privacy Policy explains how Codex Mobile IDE handles information when you use the app.
+        Codex Mobile IDE is a mobile client for connecting to your own remote server over SSH and
+        interacting with OpenAI Codex CLI running on that server.
+      </p>
+
+      <h2>What information the app uses</h2>
+      <ul>
+        <li>Server connection details you enter, such as server name, host, port, username, and optional password.</li>
+        <li>Remote file paths, shell commands, and Codex session content needed to display and continue your remote workflow.</li>
+        <li>Locally stored preferences such as saved servers and the last opened remote directory for each server.</li>
+      </ul>
+
+      <h2>How information is used</h2>
+      <ul>
+        <li>To establish an SSH connection to the server you choose.</li>
+        <li>To browse remote files, open a remote shell, and start or resume Codex sessions.</li>
+        <li>To remember app state such as saved server entries and recently opened directories.</li>
+      </ul>
+
+      <h2>Where your data is processed</h2>
+      <p>
+        Codex Mobile IDE is a remote access client. Commands, file operations, and Codex interactions are performed
+        on the remote server you connect to. The app itself does not provide an offline coding model and does not work
+        without a reachable server and active internet connection.
+      </p>
+
+      <h2>Data storage</h2>
+      <ul>
+        <li>Saved server information may be stored locally on your device.</li>
+        <li>Remote shell output, file contents, and Codex session history are displayed from your remote server and may remain on that server according to its own configuration.</li>
+        <li>The app does not claim ownership of your repositories, remote files, or Codex session logs.</li>
+      </ul>
+
+      <h2>Third-party services</h2>
+      <p>
+        The app connects to systems you configure, including your SSH server and any services used by OpenAI Codex CLI on that server.
+        Your use of those services is governed by their own terms and privacy policies.
+      </p>
+
+      <h2>Data sharing</h2>
+      <p>
+        Codex Mobile IDE does not sell your personal information. The app only transmits information needed to connect
+        to your server and operate the remote workflow you request.
+      </p>
+
+      <h2>Security</h2>
+      <p>
+        The app uses SSH to communicate with your remote server. However, no method of transmission or local storage is completely secure,
+        and you are responsible for the security of the server, credentials, and Codex environment you choose to use.
+      </p>
+
+      <h2>Children's privacy</h2>
+      <p>
+        Codex Mobile IDE is intended for developers and is not directed to children.
+      </p>
+
+      <h2>Changes to this policy</h2>
+      <p>
+        This Privacy Policy may be updated from time to time. The latest version will be posted on this page.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        If you have questions about this Privacy Policy, contact:
+        <a href="mailto:jmbyun91+codexmobile@gmail.com">jmbyun91+codexmobile@gmail.com</a>
+      </p>
+    </main>
+  </div>
+</body>
+</html>
